@@ -1,0 +1,12 @@
+/* SourceSansRegular */
+@font-face {
+    font-family: 'SourceSans';
+    src: url('fonts/sourcesans-regular-webfont.eot');
+    src: url('fonts/sourcesans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sourcesans-regular-webfont.woff') format('woff'),
+         url('fonts/sourcesans-regular-webfont.ttf') format('truetype'),
+         url('fonts/sourcesans-regular-webfont.svg#SourceSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

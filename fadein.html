@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html> 
+	<head> 
+		<title>Edge Demo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style type="text/css">
+			
+			@-webkit-keyframes fadein {
+				
+				0% {
+					-webkit-filter: sepia(100%);
+				}
+				50% {
+					-webkit-filter: sepia(100%);
+				}
+				100% {
+					-webkit-filter: sepia(0%);
+				}
+			}
+			#Stage{
+				-webkit-animation-name: fadein;
+				-webkit-animation-duration: 3s;
+				-webkit-animation-timing-function: ease; /* ease is the default */
+				-webkit-animation-delay: 0;             /* 0 is the default */
+				-webkit-animation-iteration-count: 1;    /* 1 is the default */
+				-webkit-animation-direction: normal;  /* normal is the default */
+			}
+
+
+		</style>
+		<!--Adobe Edge Runtime-->
+		    <script type="text/javascript" charset="utf-8" src="index_edgePreload.js"></script>
+		    <style>
+		        .edgeLoad-EDGE-609940912 { visibility:hidden; }
+		    </style>
+		<!--Adobe Edge Runtime End-->
+	</head> 
+	<body>
+		<div id="Stage" class="EDGE-609940912 edgeLoad-EDGE-609940912">
+		</div>
+
+	</body>
+</html>		

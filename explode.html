@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html> 
+	<head> 
+		<title>Edge Demo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style type="text/css">
+			
+			@-webkit-keyframes explode {
+				
+				0% {
+				-webkit-filter: custom(url(shaders/vertex/quad-explosion.vs) mix(url(shaders/fragment/quad-explosion.fs) normal source-atop), 76 100 border-box detached, matrix rotateX(0deg) rotateY(0deg) rotateZ(0deg), perspective 1000, amount 1.5, centerX 0.5, centerY 0.5, t 1, fade 0.7);
+				}
+				100% {
+				-webkit-filter: custom(url(shaders/vertex/quad-explosion.vs) mix(url(shaders/fragment/quad-explosion.fs) normal source-atop), 76 100 border-box detached, matrix rotateX(0deg) rotateY(0deg) rotateZ(0deg), perspective 1000, amount 1.5, centerX 0.5, centerY 0.5, t 0.5, fade 0.7);
+				}
+			}
+			#Stage{
+				-webkit-animation-name: explode;
+				-webkit-animation-duration: 2s;
+				-webkit-animation-timing-function: ease; /* ease is the default */
+				-webkit-animation-delay: 1s;             /* 0 is the default */
+				-webkit-animation-iteration-count: infinite;    /* 1 is the default */
+				-webkit-animation-direction: alternate;  /* normal is the default */
+			}
+
+
+		</style>
+		<!--Adobe Edge Runtime-->
+		    <script type="text/javascript" charset="utf-8" src="index_edgePreload.js"></script>
+		    <style>
+		        .edgeLoad-EDGE-609940912 { visibility:hidden; }
+		    </style>
+		<!--Adobe Edge Runtime End-->
+	</head> 
+	<body>
+		<div id="Stage" class="EDGE-609940912 edgeLoad-EDGE-609940912">
+		</div>
+
+	</body>
+</html>		
